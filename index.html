@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Estacionamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Usuário" class="iconeUsuario">
+        <input type="text" class="campoBuscar" id="campoBusca" value="Rua Sergipe, Londrina" disabled>
+        <button class="botaoBuscar">Buscar</button>
+    </nav>
+
+    <main>
+        <div id="map"></div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>🚗 Estacionamentos próximos</h3>
+            <ul id="lista-estacionamentos"></ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
